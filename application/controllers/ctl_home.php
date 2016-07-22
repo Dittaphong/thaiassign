@@ -11,8 +11,8 @@ class ctl_home extends CI_Controller {
 	
 	public function index()
 	{
-		$this->data['tempheader']=$this->template->getHeader();
-		$this->load->view('home',$this->data);
+		$this->data['tempheader']=$this->template->getHeader();		
 		$this->data['tempfooter']=$this->template->getFooter();
+		$this->load->view('home',$this->data);
 	}
 }
