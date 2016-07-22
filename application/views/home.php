@@ -86,6 +86,18 @@
 								<p>Settings</p>
                             </a>
                         </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <p>Account</p>
+                                    <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">config 1</a></li>
+                                <li><a href="#">profile 2</a></li> 
+                                <li><a href="<?php echo base_url();?>ctl_authen/logout" style="color:#fa4c07;">logout</a></li> 
+                              </ul>
+                        </li>
                     </ul> 
                 </div>
             </div>
