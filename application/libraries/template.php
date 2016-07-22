@@ -42,48 +42,48 @@ class Template {
    {
       return '
 
-      </div>  <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="http://www.thainology.com">Thainology.com</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.thainology.com">Thainology Dev.</a>
-                </div>
-            </div>
-        </footer>
+                    </div>  <footer class="footer">
+                          <div class="container-fluid">
+                              <nav class="pull-left">
+                                  <ul>
+                                      <li>
+                                          <a href="http://www.thainology.com">Thainology.com</a>
+                                      </li>
+                                  </ul>
+                              </nav>
+                              <div class="copyright pull-right">
+                                  &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.thainology.com">Thainology Dev.</a>
+                              </div>
+                          </div>
+                      </footer>
 
-    </div>
-</div> 
-</body>
+                  </div>
+              </div> 
+              </body>
 
-    <script src="'.base_url().'assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-  <script src="'.base_url().'assets/js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="'.base_url().'assets/js/bootstrap-checkbox-radio.js"></script>
-  <script src="'.base_url().'assets/js/chartist.min.js"></script>
-  <script src="'.base_url().'assets/js/bootstrap-notify.js"></script>
-  <script src="'.base_url().'assets/js/paper-dashboard.js"></script>
-  <script src="'.base_url().'assets/js/demo.js"></script>
-  
-  <script type="text/javascript">
-      $(document).ready(function(){ 
-          demo.initChartist(); 
-        //  $.notify({
-        //      icon: "ti-gift",
-        //      message: "Welcome to Thai Assign"
-        //  },{
-        //      type: "success",
-        //      timer: 4000
-        //  });
+                  <script src="'.base_url().'assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+                <script src="'.base_url().'assets/js/bootstrap.min.js" type="text/javascript"></script>
+                <script src="'.base_url().'assets/js/bootstrap-checkbox-radio.js"></script>
+                <script src="'.base_url().'assets/js/chartist.min.js"></script>
+                <script src="'.base_url().'assets/js/bootstrap-notify.js"></script>
+                <script src="'.base_url().'assets/js/paper-dashboard.js"></script>
+                <script src="'.base_url().'assets/js/demo.js"></script>
+                
+                <script type="text/javascript">
+                    $(document).ready(function(){ 
+                        demo.initChartist(); 
+                      //  $.notify({
+                      //      icon: "ti-gift",
+                      //      message: "Welcome to Thai Assign"
+                      //  },{
+                      //      type: "success",
+                      //      timer: 4000
+                      //  });
 
-      });
-  </script>
+                    });
+                </script>
 
-</html>
+              </html>
 ';
    }
 }
