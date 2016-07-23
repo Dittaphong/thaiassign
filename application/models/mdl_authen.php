@@ -7,12 +7,12 @@ class mdl_authen extends CI_Model
 		//$this->load->database("thainology");
       }
 
-      public function checkdatalogin($username, $userpassword)
+      public function checkdatalogin($username, $password)
       { 
          $sql=" 
-		SELECT memp_id
-		   FROM memp 
-			WHERE email='" .trim($username). "' AND userpassword= '" .$userpassword."' AND status > 0 ";
+		SELECT id_mmember
+		   FROM mmember 
+			WHERE username='" .trim($username). "' AND password= '" .$password."' AND status > 0 ";
   
           $result=$this->db->query($sql);
          if($result->num_rows() > 0)
@@ -27,25 +27,17 @@ class mdl_authen extends CI_Model
 
  public function getdatauser($username){
 	  $sql = "
-	  SELECT
-			a.memp_id ,
-			a.code_memp,
-			CONCAT(a.firstname_th,' ',a.lastname_th) AS name_memp,
-			b.name_th AS mpos_name,
-			c.name_th AS memp_cat_name,
-			a.id_mpos,
-			a.id_memp_cat,
-			a.birthdate,
+		SELECT
+			a.id_mmember ,
+			a.mmember_code,
+			a.mmember_name,
+			a.mposition_name,
 			a.email,
-			a.userpassword,
-			a.status,
-			a.img_name,
-			a.mobile
+			a.username,
+			a.status
 		FROM
-		memp a
-		LEFT JOIN mpos b ON a.id_mpos=b.id_mpos
-		LEFT JOIN memp_cat c ON a.id_memp_cat=c.id_memp_cat
-	    WHERE a.email='$username' " ;
+		member a
+	    WHERE  a.username='$username' " ;
    // echo "<pre>".$sql; 
          $query = $this->db->query($sql);
  		 return $query->row(); 

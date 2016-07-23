@@ -16,7 +16,7 @@ class Ctl_authen extends CI_Controller {
 	public function index()
 	{
 		
-    if($this->session->userdata('id_memp')==""){
+    if($this->session->userdata('id_mmember')==""){
 		$this->load->library('temp_authen');
 		$this->data['tempheader']=$this->temp_authen->getHeader();
 		$this->data['tempfooter']=$this->temp_authen->getFooter();
@@ -38,12 +38,12 @@ public function checkLogin()
 			$result = $this->mdl_authen->getdatauser($_POST['username']);
 			
 			 $this->loginSession = array(
-				"id_memp"    => $result->memp_id,
-				"memp_code"  => $result->code_memp,
-				"email"   	 => $result->email,
-				"memp_name"  => $result->name_memp,
-				"id_mpos"  	 => $result->id_mpos,
-				"mpos_name"  => $result->mpos_name,
+				"id_mmember"    => $result->id_mmember,
+				"mmember_code"  => $result->mmember_code,
+				"mmember_name" 	=> $result->mmember_name,
+				"email"   	 	=> $result->email,
+				"id_mposition"  => $result->id_mposition,
+				"mposition_name"=> $result->mposition_name,
 
 			); 
 			$this->session->set_userdata($this->loginSession);  
@@ -64,15 +64,14 @@ public function checkLogin()
 
 	public function logout()
 	{
-		if ( $this->session->userdata("id_memp") != null )
+		if ( $this->session->userdata("id_mmember") != null )
 	    {
-			$this->session->unset_userdata("id_memp");
-			$this->session->unset_userdata("memp_code");
+			$this->session->unset_userdata("id_mmember");
+			$this->session->unset_userdata("mmember_code");
+			$this->session->unset_userdata("mmember_name");
 			$this->session->unset_userdata("email");
-			$this->session->unset_userdata("memp_name");
-			$this->session->unset_userdata("id_mpos");
-			$this->session->unset_userdata("mpst_name");
-			$this->session->unset_userdata("mpos_name");
+			$this->session->unset_userdata("id_mposition");
+			$this->session->unset_userdata("mposition_name");
 			
 			echo "<meta charset='UTF-8'>
           <SCRIPT LANGUAGE='JavaScript'>

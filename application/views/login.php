@@ -2,7 +2,6 @@
 
 <div class="fullscreen_bg"/>
 <div class="container">
-
     <form class="form-signin" action="<?php echo base_url();?>ctl_authen/checkLogin" accept-charset="utf-8" id="form"  method="post" autocomplete="off"> 
            <h3 class="form-signin-heading"><font style="color:#cfd2d6;">Thai Assign</font></h3>
           		 <label for="inputEmail" class="sr-only">username</label>
