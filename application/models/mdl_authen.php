@@ -35,8 +35,8 @@ class mdl_authen extends CI_Model
 			a.email,
 			a.username,
 			a.status
-		FROM
-		member a
+		FROM 
+		mmember a
 	    WHERE  a.username='$username' " ;
    // echo "<pre>".$sql; 
          $query = $this->db->query($sql);

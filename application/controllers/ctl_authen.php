@@ -42,7 +42,6 @@ public function checkLogin()
 				"mmember_code"  => $result->mmember_code,
 				"mmember_name" 	=> $result->mmember_name,
 				"email"   	 	=> $result->email,
-				"id_mposition"  => $result->id_mposition,
 				"mposition_name"=> $result->mposition_name,
 
 			); 
