@@ -24,9 +24,6 @@ class Temp_authen {
 		    return  $text;
    }
 
-
-
-
    public function getFooter()
    {
       return '
