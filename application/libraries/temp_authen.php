@@ -19,7 +19,7 @@ class Temp_authen {
         </head>
               <body>
          
-                  <div class="container">  <!-- /container -->
+                  <div class="container">
 ';
 		    return  $text;
    }
@@ -28,7 +28,7 @@ class Temp_authen {
    {
       return '
 
-                    </div> <!-- /container -->
+                    </div>
     <p class="bg-info"><center><font style="color:#9fa2ac; ">Thainology and Solutions Co.,Ltd</font></center></p>
       </body>
 </html>

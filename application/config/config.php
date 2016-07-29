@@ -15,7 +15,7 @@
 |
 */
 
-$config['base_url']	= 'http://localhost/thaiassign/';
+$config['base_url']	= 'http://192.168.2.219/thaiassign/';
 
 /*
 |--------------------------------------------------------------------------
